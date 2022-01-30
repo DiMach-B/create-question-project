@@ -1,0 +1,235 @@
+h2, h6 {
+    margin: 0;
+    color: white;
+}
+
+body {
+    display: flex;
+}
+
+li{
+    color: white;
+}
+
+.title1{
+
+    margin: 50px 0 0 25px;
+    font-size: 45px;
+
+}
+
+.title2{
+
+    margin: 0 0 45px 25px;
+    padding-right: 20px;
+    font-size: 45px;
+    font-weight:600;
+}
+
+.title3{
+
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+.title4{
+
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+.question {
+
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(141, 140, 140, 0.5);
+    width: 100%;
+    font-size: 20px;
+}
+
+.question:focus {
+
+    outline: none;
+    border-bottom: 1px solid rgb(141, 140, 140, 0.5);
+}
+
+.addQuestion {
+
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border-radius: 10px;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.item{
+    margin-top: 30px;
+}
+
+.name {
+
+    margin-top: 30px;
+    color: black;
+    font-size: 40px;
+    font-weight:600;
+}
+
+.date {
+
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.content {
+
+    margin-top: 10px;
+    font-size: 25px;
+    width: 100vw;
+
+}
+
+.main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 2fr 8fr;
+    
+}
+
+.container {
+
+    margin-left: 20%;
+    max-width: 1100px;
+}
+
+.navigation{
+    position: fixed;
+    background-color: rgb(0, 174, 255);
+    height: 70vh;
+    border-radius: 0 0 100em 0;
+
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.red {
+
+    background-color: #FF6840	;
+    right: 30px;
+    top: 50px;
+}
+
+.green {
+
+    background-color: #FFCA40	;
+    right: 210px;
+    top: 50px;
+}
+
+.end {
+
+    display: none;
+    background-color: rgb(0, 0, 0);
+    right: 30px;
+    top: 50px;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+}
+
+.addQuestion:hover {
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+}
+
+.button:active {
+    opacity: 0.7;
+}
+
+.modale {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.modale-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  auto;
+    z-index: 3;
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 174, 255);
+
+}
+
+.title-model {
+
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.modale-content input{
+
+    margin-top: 20px;
+    font-size: 20px;
+    width: 19em;
+    height: 1.7em;
+    border-radius: 20px;
+    padding-left: 10px;
+    
+}
+
+.modale-content button{
+
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: rgb(0, 174, 255);
+    padding: 5px;
+}
+
+.modale-content span{
+
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+    font-size: 20px;
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.error {
+    display: none;
+    font-size: 17px;
+}
+
